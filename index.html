@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Lab</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 48px;
+            max-width: 520px;
+            text-align: center;
+        }
+        .card h1 { font-size: 2rem; margin-bottom: 12px; }
+        .card p { font-size: 1.1rem; color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 8px; }
+        .badge {
+            display: inline-block; margin-top: 20px; padding: 8px 20px;
+            border-radius: 999px; background: rgba(72,187,120,0.15);
+            border: 1px solid rgba(72,187,120,0.4); color: #68d391; font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>GCP + Docker Lab</h1>
+        <p>Веб-застосунок розгорнуто у Docker-контейнері на базі nginx</p>
+        <p>Google Cloud Platform &bull; Compute Engine</p>
+        <span class="badge">&#10003; Container is running</span>
+    </div>
+</body>
+</html>
